@@ -1,0 +1,77 @@
+<Persons>
+	<Person>
+		<Name>
+			<First>John</First>
+			<Last>Doe</Last>
+		</Name>
+		<Credential>
+			<Id>jdoe</Id>
+			<Password encryption="yes">xyz</Password>
+		</Credential>
+		<Phone>
+			<Work>4809560000</Work>
+			<Cell provider="TMobile">4801234567</Cell>
+	    </Phone>
+		<Category>Friend</Category>
+	</Person>
+	<Person>
+		<Name>
+			<First>Bob</First>
+			<Last>Builder</Last>
+		</Name>
+		<Credential>
+			<Id>bbuild</Id>
+			<Password encryption="yes">btb</Password>
+		</Credential>
+		<Phone>
+			<Work>1234567890</Work>
+			<Cell>1230987654</Cell>
+	    </Phone>
+		<Category>Friend</Category>
+	</Person>
+		<Person>
+		<Name>
+			<First>Sally</First>
+			<Last>Sassburg</Last>
+		</Name>
+		<Credential>
+			<Id>jdoe</Id>
+			<Password encryption="yes">xyz</Password>
+		</Credential>
+		<Phone>
+			<Work>4809560000</Work>
+			<Cell provider="TMobile">4801234567</Cell>
+	    </Phone>
+		<Category>Friend</Category>
+	</Person>
+		<Person>
+		<Name>
+			<First>John</First>
+			<Last>Doe</Last>
+		</Name>
+		<Credential>
+			<Id>jdoe</Id>
+			<Password encryption="yes">xyz</Password>
+		</Credential>
+		<Phone>
+			<Work>4809560000</Work>
+			<Cell provider="TMobile">4801234567</Cell>
+	    </Phone>
+		<Category>Friend</Category>
+	</Person>
+		<Person>
+		<Name>
+			<First>John</First>
+			<Last>Doe</Last>
+		</Name>
+		<Credential>
+			<Id>jdoe</Id>
+			<Password encryption="yes">xyz</Password>
+		</Credential>
+		<Phone>
+			<Work>4809560000</Work>
+			<Cell provider="TMobile">4801234567</Cell>
+	    </Phone>
+		<Category>Friend</Category>
+	</Person>
+</Persons>

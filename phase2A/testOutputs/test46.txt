@@ -1,0 +1,4 @@
+start2(): started
+start2(): calling USLOSS_DeviceOutput to enable receive interrupts
+XXp0(): started, calling waitDevice for disk 0
+XXp1(): started, calling waitDevice for disk 1

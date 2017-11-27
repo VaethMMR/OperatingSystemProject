@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCDB6E9F1DE5132C004E59BC /* libuser.c in Sources */ = {isa = PBXBuildFile; fileRef = FCDB6E941DE5132C004E59BC /* libuser.c */; };
+		FCDB6EA11DE5132C004E59BC /* phase5.c in Sources */ = {isa = PBXBuildFile; fileRef = FCDB6E9B1DE5132C004E59BC /* phase5.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCDB6E881DE512AF004E59BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FCDB6E941DE5132C004E59BC /* libuser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libuser.c; sourceTree = SOURCE_ROOT; };
+		FCDB6E951DE5132C004E59BC /* libuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libuser.h; sourceTree = SOURCE_ROOT; };
+		FCDB6E961DE5132C004E59BC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
+		FCDB6E971DE5132C004E59BC /* phase1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase1.h; sourceTree = SOURCE_ROOT; };
+		FCDB6E981DE5132C004E59BC /* phase2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase2.h; sourceTree = SOURCE_ROOT; };
+		FCDB6E991DE5132C004E59BC /* phase3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase3.h; sourceTree = SOURCE_ROOT; };
+		FCDB6E9A1DE5132C004E59BC /* phase4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase4.h; sourceTree = SOURCE_ROOT; };
+		FCDB6E9B1DE5132C004E59BC /* phase5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = phase5.c; sourceTree = SOURCE_ROOT; };
+		FCDB6E9C1DE5132C004E59BC /* phase5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase5.h; sourceTree = SOURCE_ROOT; };
+		FCDB6E9D1DE5132C004E59BC /* providedPrototypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = providedPrototypes.h; sourceTree = SOURCE_ROOT; };
+		FCDB6E9E1DE5132C004E59BC /* vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm.h; sourceTree = SOURCE_ROOT; };
+		FCDB6EA41DE518FD004E59BC /* Phase5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Phase5; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCDB6E871DE512AF004E59BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCDB6E811DE512AF004E59BC = {
+			isa = PBXGroup;
+			children = (
+				FCDB6E8C1DE512AF004E59BC /* Phase5 */,
+				FCDB6EA41DE518FD004E59BC /* Phase5 */,
+			);
+			sourceTree = "<group>";
+		};
+		FCDB6E8C1DE512AF004E59BC /* Phase5 */ = {
+			isa = PBXGroup;
+			children = (
+				FCDB6EA31DE5134B004E59BC /* src */,
+				FCDB6EA21DE5133B004E59BC /* headers */,
+				FCDB6E961DE5132C004E59BC /* Makefile */,
+			);
+			path = Phase5;
+			sourceTree = "<group>";
+		};
+		FCDB6EA21DE5133B004E59BC /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				FCDB6E9D1DE5132C004E59BC /* providedPrototypes.h */,
+				FCDB6E951DE5132C004E59BC /* libuser.h */,
+				FCDB6E971DE5132C004E59BC /* phase1.h */,
+				FCDB6E981DE5132C004E59BC /* phase2.h */,
+				FCDB6E991DE5132C004E59BC /* phase3.h */,
+				FCDB6E9A1DE5132C004E59BC /* phase4.h */,
+				FCDB6E9C1DE5132C004E59BC /* phase5.h */,
+				FCDB6E9E1DE5132C004E59BC /* vm.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		FCDB6EA31DE5134B004E59BC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FCDB6E941DE5132C004E59BC /* libuser.c */,
+				FCDB6E9B1DE5132C004E59BC /* phase5.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCDB6E891DE512AF004E59BC /* Phase5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCDB6E911DE512AF004E59BC /* Build configuration list for PBXNativeTarget "Phase5" */;
+			buildPhases = (
+				FCDB6E861DE512AF004E59BC /* Sources */,
+				FCDB6E871DE512AF004E59BC /* Frameworks */,
+				FCDB6E881DE512AF004E59BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Phase5;
+			productName = Phase5;
+			productReference = FCDB6EA41DE518FD004E59BC /* Phase5 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCDB6E821DE512AF004E59BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sean Vaeth";
+				TargetAttributes = {
+					FCDB6E891DE512AF004E59BC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FCDB6E851DE512AF004E59BC /* Build configuration list for PBXProject "Phase5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCDB6E811DE512AF004E59BC;
+			productRefGroup = FCDB6E811DE512AF004E59BC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCDB6E891DE512AF004E59BC /* Phase5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCDB6E861DE512AF004E59BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDB6E9F1DE5132C004E59BC /* libuser.c in Sources */,
+				FCDB6EA11DE5132C004E59BC /* phase5.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCDB6E8F1DE512AF004E59BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FCDB6E901DE512AF004E59BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FCDB6E921DE512AF004E59BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = (
+					"-I",
+					"$(SRCROOT)",
+					"-I",
+					"$(SRCROOT)/usloss",
+					"-D",
+					XOPEN_Source,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCDB6E931DE512AF004E59BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = (
+					"-I",
+					"$(SRCROOT)",
+					"-I",
+					"$(SRCROOT)/usloss",
+					"-D",
+					XOPEN_Source,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCDB6E851DE512AF004E59BC /* Build configuration list for PBXProject "Phase5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCDB6E8F1DE512AF004E59BC /* Debug */,
+				FCDB6E901DE512AF004E59BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCDB6E911DE512AF004E59BC /* Build configuration list for PBXNativeTarget "Phase5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCDB6E921DE512AF004E59BC /* Debug */,
+				FCDB6E931DE512AF004E59BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCDB6E821DE512AF004E59BC /* Project object */;
+}

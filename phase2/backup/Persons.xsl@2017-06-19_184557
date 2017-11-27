@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+	<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+		<xsl:template match="/">
+			<html><body>
+				<h1>Persons</h1>
+				<table border="1">
+					<tr bgcolor="yellow">
+						<td><b>Name</b></td>
+						<td><b>Id</b></td>
+						<td><b>Password</b></td>
+						<td><b>Password Encryption</b></td>
+						<td><b>Work Number</b></td>
+						<td><b>Cell Number</b></td>
+						<td><b>Cell Provider</b><td>
+						<td><b>Category</b></td>
+					</tr>
+					<xsl:for-each select="Persons/Person">
+						<xsl:sort select="Name/First" />
+						<tr style="font-size: 10pt; font-family: verdana">
+							<td><xsl:value-of select="First"/> <xsl:value-of select="Last"/></td>
+							<td><xsl:value-of select="Credential/Id"/></td>
+							<td><xsl:value-of select="Credential/Password"/></td>
+							<td><xsl:value-of select="Credential/Password/@encryption"/></td>
+							<td><xsl:value-of select="Phone/Work"/></td>
+							<td><xsl:value-of select="Phone/Cell"/></td>
+							<td><xsl:value-of select="Phone/Cell/@provider"/></td>
+							<td><xsl:value-of select="Category"/></td>
+						</tr>
+					</xsl:for-each>
+				</table>
+			</body></html>
+		</xsl:template>
+	

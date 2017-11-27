@@ -1,0 +1,70 @@
+start1(): started
+start1(): after fork of child 3
+start1(): after fork of child 4
+start1(): performing join
+XXp1(): started
+XXp1(): arg = `XXp1'
+XXp1(): executing fork of first child
+XXp1(): fork1 of first child returned pidXXp1(): joining with first child
+XXp2(): started
+XXp2(): zap'ing child with pid_e 5
+XXp3(): started
+PROCESSES:
+	NAME		PID	PPID	PRIORITY    STATUS	START TIME	TIMESLICE	CURRENT TIME	SLICES
+0:	Nil		--	--	--	    Unused	--		--		61ms		--
+1:	sentinel	 1	--	 6	    Ready	--		80ms		69ms		 0
+2:	start1		 2	--	 1	    Blocked	0ms		80ms		78ms		 0
+3:	XXp1		 3	 2	 3	    Blocked	0ms		80ms		83ms		 0
+4:	XXp2		 4	 2	 4	    Blocked	0ms		80ms		88ms		 0
+5:	XXp3		 5	 3	 5	    Running	0ms		80ms		95ms		 0
+6:	Nil		--	--	--	    Unused	--		--		102ms		--
+7:	Nil		--	--	--	    Unused	--		--		109ms		--
+8:	Nil		--	--	--	    Unused	--		--		117ms		--
+9:	Nil		--	--	--	    Unused	--		--		124ms		--
+10:	Nil		--	--	--	    Unused	--		--		133ms		--
+11:	Nil		--	--	--	    Unused	--		--		138ms		--
+12:	Nil		--	--	--	    Unused	--		--		145ms		--
+13:	Nil		--	--	--	    Unused	--		--		153ms		--
+14:	Nil		--	--	--	    Unused	--		--		162ms		--
+15:	Nil		--	--	--	    Unused	--		--		171ms		--
+16:	Nil		--	--	--	    Unused	--		--		178ms		--
+17:	Nil		--	--	--	    Unused	--		--		183ms		--
+18:	Nil		--	--	--	    Unused	--		--		191ms		--
+19:	Nil		--	--	--	    Unused	--		--		200ms		--
+20:	Nil		--	--	--	    Unused	--		--		208ms		--
+21:	Nil		--	--	--	    Unused	--		--		214ms		--
+22:	Nil		--	--	--	    Unused	--		--		219ms		--
+23:	Nil		--	--	--	    Unused	--		--		226ms		--
+24:	Nil		--	--	--	    Unused	--		--		232ms		--
+25:	Nil		--	--	--	    Unused	--		--		239ms		--
+26:	Nil		--	--	--	    Unused	--		--		246ms		--
+27:	Nil		--	--	--	    Unused	--		--		251ms		--
+28:	Nil		--	--	--	    Unused	--		--		259ms		--
+29:	Nil		--	--	--	    Unused	--		--		268ms		--
+30:	Nil		--	--	--	    Unused	--		--		277ms		--
+31:	Nil		--	--	--	    Unused	--		--		286ms		--
+32:	Nil		--	--	--	    Unused	--		--		292ms		--
+33:	Nil		--	--	--	    Unused	--		--		299ms		--
+34:	Nil		--	--	--	    Unused	--		--		306ms		--
+35:	Nil		--	--	--	    Unused	--		--		314ms		--
+36:	Nil		--	--	--	    Unused	--		--		320ms		--
+37:	Nil		--	--	--	    Unused	--		--		325ms		--
+38:	Nil		--	--	--	    Unused	--		--		330ms		--
+39:	Nil		--	--	--	    Unused	--		--		338ms		--
+40:	Nil		--	--	--	    Unused	--		--		344ms		--
+41:	Nil		--	--	--	    Unused	--		--		353ms		--
+42:	Nil		--	--	--	    Unused	--		--		360ms		--
+43:	Nil		--	--	--	    Unused	--		--		366ms		--
+44:	Nil		--	--	--	    Unused	--		--		374ms		--
+45:	Nil		--	--	--	    Unused	--		--		382ms		--
+46:	Nil		--	--	--	    Unused	--		--		391ms		--
+47:	Nil		--	--	--	    Unused	--		--		399ms		--
+48:	Nil		--	--	--	    Unused	--		--		404ms		--
+49:	Nil		--	--	--	    Unused	--		--		413ms		--
+
+XXp1(): join returned kid_pid = 5, status = 5
+start1(): exit status for child 3 is -3
+start1(): performing join
+XXp2(): after zap'ing child with pid_e, status = 0
+start1(): exit status for child 4 is 5
+All processes completed.

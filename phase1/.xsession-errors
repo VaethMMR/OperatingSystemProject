@@ -1,0 +1,44 @@
+openConnection: connect: No such file or directory
+cannot connect to brltty at :0
+gnome-session[16156]: WARNING: Failed to start app: Unable to start application: Failed to execute child process "gnome-power-manager" (No such file or directory)
+
+(gnome-settings-daemon:16224): power-plugin-WARNING **: gnome-session is not available
+** Message: applet now removed from the notification area
+** Message: using fallback from indicator to GtkStatusIcon
+** Message: moving back from GtkStatusIcon to indicator
+gnome-session[16156]: WARNING: Could not launch application 'gdu-notification-daemon.desktop': Unable to start application: Failed to execute child process "/usr/lib/gnome-disk-utility/gdu-notification-daemon" (No such file or directory)
+Window manager warning: CurrentTime used to choose focus window; focus window may not be correct.
+Window manager warning: Got a request to focus the no_focus_window with a timestamp of 0.  This shouldn't happen!
+
+(gnome-settings-daemon:16224): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+
+(gnome-settings-daemon:16224): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+
+(gnome-fallback-mount-helper:16259): Gdk-WARNING **: gnome-fallback-mount-helper: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(nm-applet:16258): Gdk-WARNING **: nm-applet: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(notification-daemon:16261): Gdk-WARNING **: notification-daemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(bluetooth-applet:16265): Gdk-WARNING **: bluetooth-applet: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evolution-alarm-notify:16479): Gdk-WARNING **: evolution-alarm-notify: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(gnome-screensaver:16436): Gdk-WARNING **: gnome-screensaver: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(telepathy-indicator:16419): Gdk-WARNING **: telepathy-indicator: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(deja-dup-monitor:16583): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.34 of volume monitor org.gtk.Private.GduVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(deja-dup-monitor:16583): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.35 of volume monitor org.gtk.Private.GPhoto2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(deja-dup-monitor:16583): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.36 of volume monitor org.gtk.Private.AfcVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+** (zeitgeist-datahub:16435): WARNING **: zeitgeist-datahub.vala:227: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!

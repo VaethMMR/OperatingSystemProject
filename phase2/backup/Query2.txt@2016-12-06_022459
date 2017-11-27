@@ -1,0 +1,18 @@
+#----------------------------------------------------
+#What procdures are we doing on patient x today?
+#Input: Patient pFirst, Patient pLast, Date today
+
+SELECT Procedure.ProcName
+FROM (Patient LEFT OUTER JOIN (SELECT *	FROM (jetorres.Procedure left outer join (SELECT * FROM (jetorres.Appointment left outer join jetorres.ApptProc on Appointment.ApptNo=ApptProc.ApptNo) ) on Procedure.ProcID=ApptProc.ProcID );
+							  ) on Patient.PatID=Appointment.PatID;
+	 )
+WHERE Patient.FirstName=pFirst
+AND Patient.LastName=pLast
+AND Appointment.ApptDate=TO_DATE('19-DEC-16', 'DD-MON-YY');	 
+AND Appointment.ApptDate=today;
+#----------------------------------------------------
+
+
+
+
+SELECT jetorres.Procedure.ProcName FROM (jetorres.Patient LEFT OUTER JOIN (SELECT * FROM (jetorres.Procedure left outer join (SELECT *	FROM (jetorres.Appointment left outer join jetorres.ApptProc on jetorres.Appointment.ApptNo=jetorres.ApptProc.ApptNo)) on jetorres.Procedure.ProcID=ApptProc.ProcID)) on jetorres.Patient.PatID=jetorres.Appointment.PatID) WHERE jetorres.Patient.FirstName='Brandon' AND jetorres.Patient.LastName='Wong' AND jetorres.Appointment.ApptDate=TO_DATE('19-DEC-16', 'DD-MON-YY');	 

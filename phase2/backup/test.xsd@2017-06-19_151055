@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">   
+	<xs:element name="Persons">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Person" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="First" type="xs:string"/>
+										<xs:element name="Last" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Credential">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Id" type="xs:string"/>
+										<xs:element name="Password" type="xs:string">
+											<xs:complexType>
+											
+											<xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Phone">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Work" type="xs:integer"/>
+										<xs:element name="Cell" type="xs:integer"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>	
+							<xs:element name="Category" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>
+
+
+				<xs:complexType>
+					<xs:attribute name="provider"
+								  type="xs:string"
+								  use="optional"/>
+				</xs:complexType>
+			</xs:element>

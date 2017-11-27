@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<%@page language = "java" import="java.sql.*,java.util.*,java.lang.StringBuffer,
+    dbController.DatabaseController" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Get Reciept</title>
+</head>
+<body>
+<div id="query3">
+<%
+	request.setCharacterEncoding("utf-8");
+	response.setContentType("text/html;charset=utf-8");
+	
+	DatabaseController dbcontroller = new DatabaseController();
+	// connect to backend database server via the databasecontroller, which
+	// is a wrapper class providing necessary methods for this particular
+	// application
+	dbcontroller.Open();
+	
+	// writing the content on output/response page
+	out.write("<h2>Reciept</h2>");
+	
+	// stringbuffer to hold final content
+	StringBuffer content = new StringBuffer();;
+	content.append("<br/><table>");
+	
+	// asking dbcontroller to list the employee table
+	Vector<String> vecResult = dbcontroller.Query3();
+	if (vecResult == null) {
+		content.append("Query result is null!");
+	}else{
+				content.append("Shit is inside");
+
+	}
+    
+	content.append("<tr><th>FirstName</th><th>LastName</th><th>Cost</th><th>Procedure</th>");
+	
+	if (vecResult != null && vecResult.size() > 0) {
+		for (int i = 0; i < vecResult.size(); i++) {
+			String row = vecResult.get(i);
+			String[] detail = row.split("##");
+			
+			content.append(
+				"<tr id=\"tablerow_" + i + "\">");
+			
+			content.append(
+				"<td class=\"postlist\"><a href=\"javascript:void(0)\" " +
+				"\"><b>" + detail[0] + "</b></a></td>"
+				);
+				
+			content.append(
+				"<td><a href=\"javascript:void(0)\" >" +
+				"<b>" + detail[1] + "</b></a></td>");
+				
+			content.append("<td>" + detail[2] + "</td>");
+			content.append("<td>" + detail[3] + "</td>");
+			content.append("</tr>");
+				
+		}
+	}
+	out.write(content.toString());
+	
+	// close the dbcontroller and relase all resources occupied by it.
+	dbcontroller.Close();
+%>
+</div>
+</body>
+</html>

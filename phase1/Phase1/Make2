@@ -1,0 +1,47 @@
+# Sean VAeth
+#
+# 	Makefile: -  powerpoint to pdf converter (makefile)
+#		check if pdf files are up-to-date.
+#		if they aren't or do not exist, convert ppt to pdf
+# 		check if archive file lectures.tar.gz is up-to-date
+#		if it isn't, update it and rearchive all ppt and pdf files
+#		and copy to subdirectory www
+#	
+#		topdf:		converts ppt to pdf	
+#		archive:	checks for archives ppt and pdf files
+#		clean:		clears all targets created by make (except directory www and contents)
+
+# ================================= MACROS ===============================================
+	DEST=lectures.tar.gz
+	DIR=www
+	OBJS=$(DEST)
+	PPT=$(shell ls *.ppt 2> /dev/null)
+	PDF=$(shell ls *.pdf 2> /dev/null)
+	TARGETS=$(PPT:.ppt=.pdf)
+	PPTTOPDFPATH=$(shell if [ -f ppttopdf ]; then echo ppttopdf ; \
+		else echo /home/cs352/summer16/a7/ppttopdf ; fi)
+
+	.PHONY: all clean
+
+	#phony to make all
+	all: a7
+
+	#phony to make topdf and archive
+	a7: $(TARGETS) $(DEST)
+
+	#       check if pdf files are up-to-date.
+	#       if they aren't or do not exist, convert ppt to pdf
+	%.pdf: %.ppt
+		@$(PPTTOPDFPATH) $?
+	
+	#       check if archive file lectures.tar.gz is up-to-date
+	#       if it isn't or does not exist, update it and rearchive all ppt and pdf files
+	#       and copy to subdirectory www
+	$(DEST): $(TARGETS) $(PDF)
+		@tar -czf $(DEST) $(PPT) $(PDF)
+		@mkdir -p $(DIR)
+		@cp $(DEST) $(DIR)/
+
+	#       clears all targets created by make (except directory www and contents)
+	clean:
+		rm -rf *.pdf $(OBJS)

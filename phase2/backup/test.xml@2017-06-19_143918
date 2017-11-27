@@ -1,0 +1,55 @@
+<Persons>
+	<Person>
+		<Name>
+			<First>John</First>
+			<Last>Doe</Last>
+		</Name>
+		<Credential>
+			<Id>jdoe</Id>
+			<Password attributeOne="yes">xyz</Password>
+		</Credential>
+		<Phone>
+			<Work>4809560000</Work>
+			<Cell attributeTwo="TMobile">4801234567</Cell>
+	    </Phone>
+		<Category>Friend</Category>
+	</Person>
+	<Person>
+		<Name>
+			<First>Bob</First>
+			<Last>Builder</Last>
+		</Name>
+		<Credential>
+			<Id>bbuild</Id>
+			<Password attributeOne="yes">btb</Password>
+		</Credential>
+		<Phone>
+			<Work>1234567890</Work>
+			<SubSix>1230987654</SubSix>
+	    </Phone>
+		<Category>Friend</Category>
+	</Person>
+</Persons>
+
+
+
+<Tests>
+	<Test>
+		<ElementOne>Test1
+		</ElementOne>
+		<ElementTwo>Test2
+		</ElementTwo>
+		<ElementThree>Test3
+	    </ElementThree>
+		<ElementFour>Friend</ElementFour>
+	</Test>
+	<Test>
+		<ElementOne>Test1
+		</ElementOne>
+		<ElementTwo>Test2
+		</ElementTwo>
+		<ElementThree>Test3
+	    </ElementThree>
+		<ElementFour>Friend</ElementFour>
+	</Test>
+</Tests>
